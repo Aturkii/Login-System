@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--^------- Bootstrap Style Sheet -------->
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <!--^------- Custom Style sheet -------->
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Home</title>
+</head>
+
+<body id="home">
+
+  <nav class="navbar navbar-expand-lg navbar-dark Box">
+    <div class="container">
+      <a class="navbar-brand" href="#">SMART LOGIN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class='nav-link btn btn-outline-warning ' href='/' onclick='logout()'>Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5 text-center h-100 d-flex align-items-center">
+    <div class="Box m-auto w-75 p-5">
+      <h1 class="text-center">Welcome <span id="username"></span></h1>
+    </div>
+  </div>
+
+  <!--&------------------ JS Files -------------------->
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/home.js"></script>
+</body>
+
+</html>
