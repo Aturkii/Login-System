@@ -35,13 +35,12 @@ function login() {
     if (signUpData[i].email.toLowerCase() == email.toLowerCase() && signUpData[i].password.toLowerCase() == password.toLowerCase()) {
       localStorage.setItem('sessionUsername', signUpData[i].name);
       if (url == '/') {
-        location.replace('https://' + location.hostname + '/home.html')
+        location.replace('https://' + location.hostname + 'home.html')
       } else {
-        location.replace(url + '/home.html')
+        location.replace(url + 'home.html')
       }
     } else {
       document.getElementById('check').innerHTML = '<span class="p-2 text-danger">incorrect email or password</span>'
-      console.log("hi im workingggg");
     }
   }
 }
